@@ -1,0 +1,40 @@
+{
+  "name": "react-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QinyunWang/react-scaffold.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QinyunWang/react-scaffold/issues"
+  },
+  "homepage": "https://github.com/QinyunWang/react-scaffold#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,css,md}": "prettier --write"
+  }
+}
